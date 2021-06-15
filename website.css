@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#fc{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: violet;
+    border: 1px solid black;
+    margin-top: 2px;
+    height:100vh ;
+}
+
+.griditem{
+    border: 1px solid black;
+}
+
+#carouselExampleCaptions{
+
+    height: 600px;
+}
+
