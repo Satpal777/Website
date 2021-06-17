@@ -20,7 +20,210 @@
     ></script>
 
     <h1 class="bg-light mt-2 mb-0 p-2 text-danger">Feedback</h1>
+    
+    <nav class="navbar navbar-expand-lg navbar-light sticky-sm-top" style="background-color: #e3f2fd;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Coding with Japy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Courses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">HTML</a></li>
+                <li><a class="dropdown-item" href="#">CSS</a></li>
+                <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">C/C++</a></li>
+                <li><a class="dropdown-item" href="#">Java</a></li>
+                <li><a class="dropdown-item" href="#">Python</a></li>
+                <li><a class="dropdown-item" href="#">MySql</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">Feedback</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+          <div>
+            <button
+              type="button"
+              class="btn btn-danger ms-lg-4 mt-lg-0 mt-2 me-4"
+              data-bs-toggle="modal"
+              data-bs-target="#LoginModal"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              Login
+            </button>
+            <button
+              type="button"
+              class="btn btn-success me-4 mt-lg-0 mt-2  "
+              data-bs-toggle="modal"
+              data-bs-target="#SignUpModal"
+              data-bs-toggle="modal"
+              data-bs-target="#signupModal"
+            >
+              SignUp
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
 
+    <!-- LoginModal -->
+    <div
+      class="modal fade"
+      id="LoginModal"
+      tabindex="-1"
+      aria-labelledby="LoginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="LoginModalLabel">Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp1" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer d-flex justify-content-md-between">
+            <button type="submit" class="btn btn-success ms-4">
+              Submit
+            </button>
+            <button type="button" class="btn btn-secondary me-4" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SignUp Modal -->
+    <div
+      class="modal fade"
+      id="SignUpModal"
+      tabindex="-1"
+      aria-labelledby="SignUpModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="SignUpModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputName1" class="form-label">Name</label>
+                <input type="text" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp2" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck">
+                <label class="form-check-label" for="exampleCheck">Check me out</label>
+              </div>
+            </form>
+          </div>
+            <div class="modal-footer d-flex justify-content-md-between">
+              <button type="submit" class="btn btn-success ms-4">
+                Submit
+              </button>
+              <button type="button" class="btn btn-secondary me-4" data-bs-dismiss="modal">
+                Close
+              </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="alert alert-success alert-dismissible fade show" role="alert">
       <div class="d-flex justify-content-between">
         <div style="justify-content: left">
@@ -96,8 +299,8 @@
           <select class="form-select" aria-label="Default select example">
             <option selected>Country</option>
             <option value="1">India</option>
-            <option value="2">U.S.A</option>
-            <option value="3">Canada</option>
+            <option value="2">Greece</option>
+            <option value="3">France</option>
           </select>
         </div>
         <div class="form-check form-switch my-4">
@@ -114,38 +317,28 @@
           <div class="form-check">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
             <label class="form-check-label" for="inlineRadio1">
-                <i class="bi bi-star-fill"></i></label>
-                <i class="bi bi-star-fill"></i></label>
-                <i class="bi bi-star-fill"></i></label>
-                <i class="bi bi-star-fill"></i></label>
-                <i class="bi bi-star-fill"></i></label>
+                <i class="bi bi-star-fill" style="color: rgb(61, 238, 61);"></i></label>
+                <i class="bi bi-star-fill" style="color: rgb(61, 238, 61);"></i></label>
+                <i class="bi bi-star-fill" style="color: rgb(61, 238, 61);"></i></label>
+                <i class="bi bi-star-fill" style="color: rgb(61, 238, 61);"></i></label>
+                <i class="bi bi-star-fill" style="color: rgb(61, 238, 61);"></i></label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
             <label class="form-check-label" for="inlineRadio2">
-                <i class="bi bi-star-fill"></i></label>
-                <i class="bi bi-star-fill"></i></label>
-                <i class="bi bi-star-fill"></i></label>
-                <i class="bi bi-star-fill"></i></label>
+                <i class="bi bi-star-fill" style="color: rgb(61, 238, 61);"></i></label>
+                <i class="bi bi-star-fill" style="color: rgb(61, 238, 61);"></i></label>
+                <i class="bi bi-star-fill" style="color: rgb(61, 238, 61);"></i></label>
+                <i class="bi bi-star-fill" style="color: rgb(61, 238, 61);"></i></label>
                 <i class="bi bi-star"></i></label>
             </label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
             <label class="form-check-label" for="inlineRadio3">
-                <i class="bi bi-star-fill"></i></label>
-                <i class="bi bi-star-fill"></i></label>
-                <i class="bi bi-star-fill"></i></label>
-                <i class="bi bi-star"></i></label>
-                <i class="bi bi-star"></i></label>
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-            <label class="form-check-label" for="inlineRadio3">
-                <i class="bi bi-star-fill"></i></label>
-                <i class="bi bi-star-fill"></i></label>
-                <i class="bi bi-star"></i></label>
+                <i class="bi bi-star-fill" style="color: rgb(61, 238, 61);"></i></label>
+                <i class="bi bi-star-fill" style="color: rgb(61, 238, 61);"></i></label>
+                <i class="bi bi-star-fill" style="color: rgb(61, 238, 61);"></i></label>
                 <i class="bi bi-star"></i></label>
                 <i class="bi bi-star"></i></label>
             </label>
@@ -153,14 +346,24 @@
           <div class="form-check">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
             <label class="form-check-label" for="inlineRadio3">
-                <i class="bi bi-star-fill"></i></label>
+                <i class="bi bi-star-fill" style="color: rgb(61, 238, 61);"></i></label>
+                <i class="bi bi-star-fill" style="color: rgb(61, 238, 61);"></i></label>
+                <i class="bi bi-star"></i></label>
+                <i class="bi bi-star"></i></label>
+                <i class="bi bi-star"></i></label>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <label class="form-check-label" for="inlineRadio3">
+                <i class="bi bi-star-fill" style="color: rgb(61, 238, 61);"></i></label>
                 <i class="bi bi-star"></i></label>
                 <i class="bi bi-star"></i></label>
                 <i class="bi bi-star"></i></label>
                 <i class="bi bi-star"></i></label>
             </label>
           </div>
-
+          <button type="button" class="btn btn-outline-primary mt-4">Submit</button>
       </div>
       <div class="d-none d-lg-block me-2">
         <img
